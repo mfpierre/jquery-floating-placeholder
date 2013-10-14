@@ -47,10 +47,9 @@
             }
         }).on('focus', function () {
             $(this).prev('span').css('color', settings.placeholderActiveColor);
-        })
-            .on('focusout', function () {
-                $(this).prev('span').css('color', settings.placeholderIdleColor);
-            });
+        }).on('focusout', function () {
+            $(this).prev('span').css('color', settings.placeholderIdleColor);
+        });
     };
 
 }(jQuery));
