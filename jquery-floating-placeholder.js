@@ -2,7 +2,6 @@
  * jquery-floating-placeholder.js v1
  * ===========================================================
  * Copyright 2013 Pierre Margueritte
- * http://www.pinxit.me
  *
  * A very simple and light weight jQuery plugin that
  * makes the placeholder float above the input when typing
