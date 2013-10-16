@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jQuery floating placeholder</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/jquery-floating-placeholder.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jQuery floating placeholder</h1>
+        <p>A very simple and light weight jQuery plugin that makes the placeholder float above the input when typing</p>
+        <p class="view"><a href="https://github.com/mfpierre/jquery-floating-placeholder">View the Project on GitHub <small>mfpierre/jquery-floating-placeholder</small></a></p>
+        <ul>
+          <li><a href="https://github.com/mfpierre/jquery-floating-placeholder/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mfpierre/jquery-floating-placeholder/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mfpierre/jquery-floating-placeholder">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Let&rsquo;s Test Some Markup</h1>
+        <p>A very simple and light weight jQuery plugin that makes the placeholder float above the input when typing</p>
+        <p>Based on a concept from Matt D. Smith on <a target="_blank" href=" http://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction">Dribble</a></p>
+        <h2>Demo</h2>
+        <form>
+            <table>
+            <tbody>
+            <tr><td><input type="text" placeholder="Title"></td></tr>
+            <tr><td><input type="email" placeholder="Price"></td></tr>
+            <tr><td><input type="text" placeholder="Specific location (optional)"></td></tr>
+            <tr><td><input type="text" placeholder="Description"></td></tr>
+            </tbody>
+            </table>
+        </form>
+        <h2>Usage</h2>
+        <div class="highlight">
+        <p>Include jQuery and jquery-floating-placeholder.js and initialize the plugin like this :</p>
+        <pre>$( 'input' ).floatingPlaceholder();</pre>
+        </div>
+        <h2>Sample CSS</h2>
+        <p>You can fully customize your inputs and what the placeholder above with look like, here is the sample CSS used in the demo</p>
+        <pre>
+input {
+    border: 0;
+    outline: none;
+    margin-top: 5px;
+    font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+.placeholder-helper{
+    position:absolute;
+    font-size: 12px;
+    top:5px;
+    transition: color .2s ease-in;
+}
+        </pre>
+        <h2>Options</h2>
+        <dl>
+            <dt>placeholderActiveColor</dt>
+            <dd>The placeholder color when the field is focus</dd>
+            <dt>placeholderIdleColor</dt>
+            <dd>The placeholder color when the field is not focus</dd>
+            <dt>activeClass</dt>
+            <dd>The class to use when a placeholder is active</dd>
+            <dt>helperClass</dt>
+            <dd>The class of the placeholder element</dd>
+            <dt>transitionTime</dt>
+            <dd>The transition time for the slide effect and color fade-in</dd>
+        </dl>
+        
+      </section>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascripts/jquery-floating-placeholder.min.js"></script>
+    <script>
+        $( "input" ).floatingPlaceholder(); 
+    </script>
+  </body>
+</html>

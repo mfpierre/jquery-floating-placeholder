@@ -1,0 +1,14 @@
+input {
+    border: 0;
+    outline: none;
+    margin-top: 5px;
+    font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+.placeholder-helper{
+    position:absolute;
+    font-size: 12px;
+    top:5px;
+    transition: color .2s ease-in;
+}
