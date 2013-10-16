@@ -6,7 +6,7 @@
  * A very simple and light weight jQuery plugin that
  * makes the placeholder float above the input when typing
  *
- * https://github.com/mfpierre/jquery-floating-placeholder
+ * http://mfpierre.github.io/jquery-floating-placeholder/
  *
  * ========================================================== */
 (function ($) {
